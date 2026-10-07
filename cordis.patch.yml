@@ -1,0 +1,16 @@
+# dsh-inline-render bundle patch
+#
+# `dsh.bundle.patch` layer: installing through the official CLI —
+#
+#   dsh plugin --profile <name> add dsh-inline-render
+#
+# — appends this single `insert` (one plugin row) to the bundle stack, so no
+# manual profile edits are needed. When mounted by hand in the profile's own
+# cordis.patch.yml, use the same id/name pair.
+#
+# The plugin registers ONE host-side tool (`inline_render`) plus a loopback-only
+# static route. It has no client half and no UI, so it cannot collide with
+# anything the host already mounts.
+- insert:
+    - id: inline-render
+      name: 'dsh-inline-render'
