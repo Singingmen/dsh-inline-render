@@ -1,6 +1,6 @@
 {
   "name": "dsh-inline-render",
-  "version": "0.1.0",
+  "version": "2026.10.19",
   "description": "DSH plugin: render SVG / raster images INLINE in the main conversation over a loopback-only media route. Works around the host markdown renderer's deliberate lack of an HTML branch without patching it. / 让 DSH 主对话内联出图（本地回环图床 + 工具调用）。",
   "type": "module",
   "license": "MIT",
